@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <p>This form showcases different types of HTML input fields using table layout</p>
+    <form action="#" method="get"  >
+        <table border="1" cellpadding="8">
+            <tr>
+                <td><label for="username">Full Name (text)</label></td>
+                <td><input type="text" name="username" id="username" placeholder="Enter Name" /></td>
+            </tr>
+            <tr>
+                <td><label for="userpassword">Password (password)</label></td>
+                <td><input type="password" name="userpassword" id="userpassword" /></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age(number)</label></td>
+                <td><input type="number" min="1" max="10" name="age" id="age" /></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email (email)</label></td>
+                <td><input type="email" name="email" id="email" placeholder="example@gmail.com" /></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender (radio)</label></td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male" />
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female" />
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Interests (checkbox)</td>
+                <td>
+                    <input type="checkbox" name="interests" id="coding" value="coding" />
+                    <label for="coding">Coding</label><br>
+                    <input type="checkbox" name="interests" id="music" value="music" />
+                    <label for="music">Music</label><br>
+                    <input type="checkbox" name="interests" id="Sports" value="sports" />
+                    <label for="sports">Sports</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Country (select/dropdown)</td>
+                <td>
+                    <select name="country" id="country">
+                        <option value="">Select Country</option>
+                        <option value="in">India</option>
+                        <option value="us">USA</option>
+                        <option value="au">Australia</option>
+                    </select>
+                </td>
+            </tr>
+             <tr>
+                <td>Date of birth (Date)</td>
+                <td>
+                    <input type="date" name="dob" id="dob" />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="color">Color (color)</label></td>
+                <td>
+                    <input type="color" name="color" id="color" />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="photo">Upload Photo (File)</label></td>
+                <td>
+                    <input type="file" name="photo" id="photo" />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="bio">About Yourself (Textarea):</label></td>
+                <td><textarea id="bio" name="bio" rows="4" cols="30" placeholder="Write a short bio..."></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="skill">Skill Level (Range):</label></td>
+                <td><input type="range" id="skill" name="skill" min="1" max="10"></td>
+            </tr>
+
+            <tr>
+                <td>Actions (Submit / Reset):</td>
+                <td>
+                    <input type="submit" value="Submit Form">
+                    <input type="reset" value="Clear All">
+                </td>
+            </tr>
+
+            
+        </table>
+    </form>
+</body>
+
+</html>

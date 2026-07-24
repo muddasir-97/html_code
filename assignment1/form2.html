@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <center>
+        <h1>Speaker Submisssion</h1>
+        <p>want to speak at our fake conference?<br>
+            fill out ths form</p>
+        <form action="#" method="post"></form>
+        <table>
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+                    <input type="text"><br> <br>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email
+                </td>
+                <td>
+                    <input type="email"><br><br>
+                </td>
+            </tr>   
+            <tr>
+                <td>
+                    Type of stage
+                </td>
+                <td>
+                    <input type="radio" name="main stage" id="main stage" value="main stage">
+                    <label for="main stage">Main stage</label>
+                    <input type="radio" name="workshop" id="workshop" value="workshop">
+                    <label for="workshop">Workshop</label>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>T-shirt Size</td>
+                <td>
+                    <select name="size" id="size">
+                        <option value="L">Large</option>
+                        <option value="XL">Extra Large</option>
+                        <option value="M">Medium</option>
+                        <option value="S">Small</option><br> <br>
+
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="bio">Abstracrt</label></td>
+                <td><textarea id="bio" name="bio" rows="4" cols="30"
+                        placeholder="describe your talk in 500 or less word"></textarea><br> <br></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" id="check">
+                    <label for="check">i'm actually available at the date of talk</label><br> <br> <br> 
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+
+                    <button>submit</button>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+    </center>
+</body>
+
+</html>
