@@ -1,0 +1,33 @@
+/* ==========================================
+   1. GROUPING SELECTOR
+   Multiple elements par same style lagana
+========================================== */
+h1, h2, h3, h4 {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+/* ==========================================
+   2. CHAINING (COMPOUND) SELECTOR
+   Ek hi element par multiple conditions match karna
+========================================== */
+div.card.highlight {
+    background-color: #f0f4f8;
+    border: 2px solid #007bff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+
+/* ==========================================
+   4. CHILD SELECTOR ( > )
+   Sirf aur sirf direct child element par lagta hai
+========================================== */
+.menu > p {
+    background-color: #ffc107;
+    padding: 8px;
+    font-weight: bold;
+}
+
