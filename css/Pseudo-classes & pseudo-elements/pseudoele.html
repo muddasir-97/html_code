@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 50px;
+            margin-top: 20px;
+            border: 3px solid black;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            background-color: palevioletred;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+
+        .btn::before {
+            content: '✨ Tooltip via ::before';
+            position: absolute;
+        }
+
+        .para::first-letter {
+            font-size: 2.8rem;
+            color: #ec4899;
+        }
+
+        p {
+            margin-bottom: 50px;
+        }
+
+
+        input::placeholder {
+            color: #ec4899;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Pseudo Elements</h1>
+
+    <button class="btn">
+        Hover For before Tooltip
+    </button>
+
+
+    <p class="para">A CSS pseudo-element is a keyword that can be added to a selector, to style a specific part of an
+        element. <br>
+
+        Some common use for pseudo-elements:
+
+        Style the first letter or first line, <br> of an element
+        Insert content before or after an element
+        Style the markers of list items
+        Style the user-selected portion of an element
+        Style the viewbox behind a dialog box</p>
+
+
+    <label for="Username">Username :- </label>
+    <input type="text" name="Username" id="Username" placeholder="Enter your text" class="input">
+
+
+</body>
+
+</html>
